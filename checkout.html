@@ -42,13 +42,13 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a><i class="fa fa-phone"></i> +52</a></li>
-						<li><a><i class="fa fa-envelope-o"></i> petspalace1234@email.com</a></li>
-						<li><a><i class="fa fa-map-marker"></i> direccion por asignar</a></li>
+						<li><a><i class="fa fa-phone"></i> +52 449 456 3060</a></li>
+						<li><a href="https://mail.google.com/"><i class="fa fa-envelope-o"></i> petspalace1234@email.com</a></li>
+						<li><a href="maps.google.com"><i class="fa fa-map-marker"></i> Av. Adolfo López Mateos</a></li>
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a><i class="fa fa-dollar"></i> MXN</a></li>
-						<li><a href="userprofile.html"><i class="fa fa-user-o"></i> Mi Cuenta</a></li>
+						<li><a href="userprofile.html"><i class="fa fa-user-o"></i> My Account </a></li>
 					</ul>
 				</div>
 			</div>
@@ -75,17 +75,13 @@
 							<div class="header-search">
 								<form>
 									<select class="input-select">
-										<option value="0">Categor&iacuteas</option>
-										<option value="1">Accesorios</option>
-										<option value="1">Acuario</option>
-										<option value="1">Alimentos</option>
-										<option value="1">Entrenamiento</option>
-										<option value="1">Higiene</option>
-										<option value="1">Ropa</option>
-										<option value="1">Salud y Bienestar</option>
-										<option value="1">Terrarios</option>
-										<option value="1">Transportadores</option>
-									</select>
+										<option value="0">Category</option>
+										<option value="1">Accessories</option>
+										<option value="1">Clothes</option>
+										<option value="1">Health & Care</option>
+										<option value="1">Home</option>
+										<option value="1">Transport</option>
+										</select>
 									<input class="input" placeholder="Search here">
 									<button class="search-btn">Search</button>
 								</form>
@@ -101,7 +97,7 @@
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
 										<span>Your Wishlist</span>
-										<div class="qty">2</div>
+										<div class="qty">0</div>
 									</a>
 								</div>
 								<!-- /Wishlist -->
@@ -111,7 +107,7 @@
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Your Cart</span>
-										<div class="qty"></div>
+										<div class="qty">2</div>
 									</a>
 									<div class="cart-dropdown">
 										<div class="cart-list">
@@ -177,13 +173,14 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
-						<li><a href="#">Descuentos</a></li>
-						<li><a href="#">Perros</a></li>
-						<li><a href="#">Gatos</a></li>
-						<li><a href="#">Roedores</a></li>
-						<li><a href="#">Peces</a></li>
-						<li><a href="#">Aves</a></li>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="general.html">General</a></li>
+						<li><a href="offers.html">Offers</a></li>
+						<li><a href="dogs.html">Dogs</a></li>
+						<li><a href="cats.html">Cats</a></li>
+						<li><a href="rodents.html">Rodents</a></li>
+						<li><a href="fishes.html">Fishes</a></li>
+						<li><a href="birds.html">Birds</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -200,10 +197,10 @@
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="breadcrumb-header">Pedido</h3>
+						<h3 class="breadcrumb-header">Order</h3>
 						<ul class="breadcrumb-tree">
-							<li><a href="index.html">Inicio</a></li>
-							<li class="active">Pedido</li>
+							<li><a href="index.html">Home</a></li>
+							<li class="active">Orders</li>
 						</ul>
 					</div>
 				</div>
@@ -224,42 +221,42 @@
 						<!-- Billing Details -->
 						<div class="billing-details">
 							<div class="section-title">
-								<h3 class="title">Dirección de Envio</h3>
+								<h3 class="title">Shipping address</h3>
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="first-name" placeholder="Nombre">
+								<input class="input" type="text" name="first-name" placeholder="First Name">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="last-name" placeholder="Apellidos">
+								<input class="input" type="text" name="last-name" placeholder="Last Name">
 							</div>
 							<div class="form-group">
 								<input class="input" type="email" name="email" placeholder="Email">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Dirección">
+								<input class="input" type="text" name="address" placeholder="Address">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="city" placeholder="Ciudad">
+								<input class="input" type="text" name="city" placeholder="City">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="country" placeholder="País">
+								<input class="input" type="text" name="country" placeholder="Country">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="zip-code" placeholder="Codigo Postal">
+								<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
 							</div>
 							<div class="form-group">
-								<input class="input" type="tel" name="tel" placeholder="Teléfono">
+								<input class="input" type="tel" name="tel" placeholder="Phone">
 							</div>
 							<div class="form-group">
 								<div class="input-checkbox">
 									<input type="checkbox" id="create-account">
 									<label for="create-account">
 										<span></span>
-										Crear Cuenta?
+										Create Account?
 									</label>
 									<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-										<input class="input" type="password" name="password" placeholder="Ingresa tu contraseña">
+									<p>Enter a password between 8 to 10 characters.</p>
+										<input class="input" type="password" name="password" placeholder="Enter your password">
 									</div>
 								</div>
 							</div>
@@ -269,38 +266,38 @@
 						<!-- Shiping Details -->
 						<div class="shiping-details">
 							<div class="section-title">
-								<h3 class="title">Dirección de Envio</h3>
+								<h3 class="title">Shipping Address</h3>
 							</div>
 							<div class="input-checkbox">
 								<input type="checkbox" id="shiping-address">
 								<label for="shiping-address">
 									<span></span>
-									¿Enviar a una dirección diferente?
+									Send to a different address?
 								</label>
 								<div class="caption">
 									<div class="form-group">
-										<input class="input" type="text" name="first-name" placeholder="Nombre">
+										<input class="input" type="text" name="first-name" placeholder="First Name">
 									</div>
 									<div class="form-group">
-										<input class="input" type="text" name="last-name" placeholder="Apellidos">
+										<input class="input" type="text" name="last-name" placeholder="Last Name">
 									</div>
 									<div class="form-group">
 										<input class="input" type="email" name="email" placeholder="Email">
 									</div>
 									<div class="form-group">
-										<input class="input" type="text" name="address" placeholder="Dirección">
+										<input class="input" type="text" name="address" placeholder="Address">
 									</div>
 									<div class="form-group">
-										<input class="input" type="text" name="city" placeholder="Ciudad">
+										<input class="input" type="text" name="city" placeholder="City">
 									</div>
 									<div class="form-group">
-										<input class="input" type="text" name="country" placeholder="País">
+										<input class="input" type="text" name="country" placeholder="Country">
 									</div>
 									<div class="form-group">
-										<input class="input" type="text" name="zip-code" placeholder="Codigo Postal">
+										<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
 									</div>
 									<div class="form-group">
-										<input class="input" type="tel" name="tel" placeholder="Teléfono">
+										<input class="input" type="tel" name="tel" placeholder="Phone">
 									</div>
 								</div>
 							</div>
@@ -309,7 +306,7 @@
 
 						<!-- Order notes -->
 						<div class="order-notes">
-							<textarea class="input" placeholder="Notas de la Direción"></textarea>
+							<textarea class="input" placeholder="Order Notes"></textarea>
 						</div>
 						<!-- /Order notes -->
 					</div>
@@ -317,11 +314,11 @@
 					<!-- Order Details -->
 					<div class="col-md-5 order-details">
 						<div class="section-title text-center">
-							<h3 class="title">Tú Orden</h3>
+							<h3 class="title">Your Order</h3>
 						</div>
 						<div class="order-summary">
 							<div class="order-col">
-								<div><strong>PRODUCTO</strong></div>
+								<div><strong>PRODUCT</strong></div>
 								<div><strong>TOTAL</strong></div>
 							</div>
 							<div class="order-products">
@@ -335,8 +332,8 @@
 								</div>
 							</div>
 							<div class="order-col">
-								<div>Envio</div>
-								<div><strong>GRATIS</strong></div>
+								<div>Send</div>
+								<div><strong>FREE</strong></div>
 							</div>
 							<div class="order-col">
 								<div><strong>TOTAL</strong></div>
@@ -348,30 +345,30 @@
 								<input type="radio" name="payment" id="payment-1">
 								<label for="payment-1">
 									<span></span>
-									Transferencia Bancaria Directa
+									Direct Bank Transfer
 								</label>
 								<div class="caption">
-									<p>Todos sus datos estan protegidos..</p>
+									<p>All your data is protected...</p>
 								</div>
 							</div>
 							<div class="input-radio">
 								<input type="radio" name="payment" id="payment-2">
 								<label for="payment-2">
 									<span></span>
-									Pago con Cheque
+									Check Payment
 								</label>
 								<div class="caption">
-									<p>Todos sus datos estan protegidos..</p>
+									<p>All your data is protected...</p>
 								</div>
 							</div>
 							<div class="input-radio">
 								<input type="radio" name="payment" id="payment-3">
 								<label for="payment-3">
 									<span></span>
-									Paypal
+									PayPal
 								</label>
 								<div class="caption">
-									<p>Todos sus datos estan protegidos.</p>
+									<p>All your data is protected...</p>
 								</div>
 							</div>
 						</div>
@@ -380,11 +377,11 @@
 							<label for="terms">
 								<span></span>
 								<!--Aun no se han designado la dirección de politicas-->
-								He leído y acepto los <a href="#">términos y condiciones</a>
+								I have read and agree to the <a href="#">terms and conditions</a>
 							</label>
 						</div>
 						<!--Aun no se han designado la dirección para ordenar-->
-						<a href="#" class="primary-btn order-submit">Ordenar</a>
+						<a href="#" class="primary-btn order-submit">Order</a>
 					</div>
 					<!-- /Order Details -->
 				</div>
@@ -402,10 +399,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
-							<p>Registrate para el <strong>BOLETÍN</strong></p>
+							<p>REGISTER </p><strong>PETSPALACE</strong></p>
 							<form>
-								<input class="input" type="email" placeholder="Ingresa tu Email">
-								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Suscribirme</button>
+								<input class="input" type="email" placeholder="Enter your Email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
 							</form>
 							<ul class="newsletter-follow">
 								<li>
@@ -441,8 +438,8 @@
 					<div class="col-md-3 col-xs-6">
 						<div class="footer">
 							<h3 class="footer-title">About Us</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut.</p>
+							<p>PetPalace is a pet product shopping site, offering veterinarian 
+								and pet groomer listings for your pets.</p>
 							<ul class="footer-links">
 								<!-- <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
 								<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
