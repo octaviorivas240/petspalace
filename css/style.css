@@ -906,6 +906,13 @@ textarea.input {
   text-align: center;
   z-index: 20;
 }
+.product .product-status{
+  text-align: center;
+  font-size: 14px;
+  color:#030303;
+  font-weight: bolder;
+  z-index: 20;
+}
 
 .product .product-body .product-category {
   text-transform: uppercase;
