@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Panel de Administración</title>
+    <!-- Vincula los archivos de estilo existentes -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nouislider.min.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/userprofile.css">
+</head>
+<body class="bg-light">
+
+    <!-- Contenedor para centrar el formulario -->
+    <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100">
+        <div class="card p-4 shadow-lg" style="max-width: 400px; width: 100%;">
+            <div class="text-center mb-4">
+                <img src="../img/logo6.png" alt="Logo Pet Palace" class="mb-3" style="width: 100px;">
+                <h3>Iniciar Sesión</h3>
+            </div>
+            <form id="loginForm">
+                <!-- Selector de rol -->
+                <div class="form-group mb-3">
+                    <label for="role"><i class="fa fa-users"></i> Ingresar como</label>
+                    <select id="role" class="form-control" required>
+                        <option value="user">Usuario</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                </div>
+                <!-- Campo de Usuario -->
+                <div class="form-floating mb-3">
+                    <input type="text" id="username" class="form-control" placeholder="Ingrese su usuario" required>
+                    <label for="username"><i class="fa fa-user"></i> Usuario</label>
+                </div>
+                <!-- Campo de Contraseña -->
+                <div class="form-floating mb-3">
+                    <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
+                    <label for="password"><i class="fa fa-lock"></i> Contraseña</label>
+                </div>
+                <!-- Botón de Iniciar Sesión -->
+                <button type="submit" class="btn btn-primary btn-block w-100">Entrar</button>
+            </form>
+            <p class="text-center mt-3"><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <!-- Mensajes de error o éxito -->
+            <div id="message" class="alert mt-3" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Script para validación -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevenir el envío del formulario
+
+            const role = document.getElementById('role').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('message');
+            
+            // Limpiar mensajes anteriores
+            message.style.display = "none";
+            message.classList.remove("alert-success", "alert-danger");
+            
+            // Validación de ejemplo
+            if (role === "admin" && username === "admin" && password === "admin123") {
+                message.style.display = "block";
+                message.classList.add("alert-success");
+                message.textContent = "Inicio de sesión como Administrador exitoso.";
+                setTimeout(() => window.location.href = "admin-panel.html", 2000); // Redirige después de 2 segundos
+            } else if (role === "user" && username === "user" && password === "user123") {
+                message.style.display = "block";
+                message.classList.add("alert-success");
+                message.textContent = "Inicio de sesión como Usuario exitoso.";
+                setTimeout(() => window.location.href = "../index.html", 2000); // Redirige después de 2 segundos
+            } else {
+                message.style.display = "block";
+                message.classList.add("alert-danger");
+                message.textContent = "Usuario o contraseña incorrectos.";
+            }
+        });
+
+        // Función de validación en tiempo real (opcional)
+        document.getElementById('username').addEventListener('input', function() {
+            this.classList.remove('is-invalid');
+        });
+        document.getElementById('password').addEventListener('input', function() {
+            this.classList.remove('is-invalid');
+        });
+    </script>
+
+</body>
+</html>
